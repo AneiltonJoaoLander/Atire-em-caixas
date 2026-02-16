@@ -1,0 +1,123 @@
+.btnRecarregar {
+  height: 100%;
+  width: 63%;
+}
+
+.esplosao {
+  width: 50px;
+  height: 50px;
+}
+
+h2 {
+  margin: 0;
+  display: inline-block;
+}
+
+.caixas {
+  width: 50%;
+  height: 95%;
+  position: absolute;
+  right: 0;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  display: inline-block;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  background-image: url("../images/imagem\ Fundo.jpeg");
+}
+
+.base {
+  width: 50%;
+  height: 95%;
+  position: absolute;
+  left: 0;
+  background-image: url("../images/imagem\ Fundo.jpeg");
+}
+
+body {
+  width: 625px;
+  height: 600px;
+}
+
+.btnIniciar {
+  height: 100%;
+  width: 35%;
+}
+
+.caixa1 {
+  width: 50px;
+  height: 50px;
+  animation: aparecer 10s ease-in-out 2 alternate forwards;
+  position: absolute;
+}
+
+@keyframes aparecer {
+  from {
+    transform: translateY(600px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.caixa2 {
+  width: 50px;
+  height: 50px;
+  animation: aparecer2 10s ease-in-out 2 alternate forwards;
+  position: absolute;
+  right: 150px;
+}
+
+@keyframes aparecer2 {
+  from {
+    transform: translateY(600px);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.caixa3 {
+  width: 50px;
+  height: 50px;
+  animation: aparecer3 10s ease-in-out 2 alternate forwards;
+  position: absolute;
+  right: 83px;
+}
+
+@keyframes aparecer3 {
+  from {
+    transform: translateY(600px);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.caixa4 {
+  width: 50px;
+  height: 50px;
+  animation: aparecer4 10s ease-in-out 2 alternate forwards;
+  position: absolute;
+  right: 14px;
+}
+
+@keyframes aparecer4 {
+  from {
+    transform: translateY(600px);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.perdeu {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
